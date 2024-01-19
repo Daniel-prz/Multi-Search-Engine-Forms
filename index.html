@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multiple Search Engine Forms</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Multi Search Engine Forms</h1>
+    <div class="flexbox">
+
+        <div class="formbox"><!-- form containing form elements(label, input...)-->
+            <!-- can be used to submit typed data/info to a remote server -->
+            <!-- method attribute determines how form data is sent to the page specified by action attribute -->
+            <!-- action attribute specifies where form data is sent to when submitted -->
+            <form method="get" action="https://www.google.com/search">
+                <!-- label element labels/captions input element -->
+                <label for="google">Google:</label>
+                <!-- input element: interactive text/data field where user can type in form to submit data -->
+                <!-- type attirbute specifies which type of input element to display -->
+                <!-- displays search input element -->
+                <!-- name attribute specifies name of input element -->
+                <input class="search" type="search" name="q" id="google">
+                <!-- can click to submit data typed in input text field above -->
+                <!-- input type submit displays submit input element -->
+                <!-- value attribute specifies text for button/submit input elements -->
+                <input class="btn" type="submit" value="Search">
+            </form>
+        </div>
+
+        <div class="formbox">
+            <form method="get" action="https://www.bing.com/search">
+                <label for="bing">Bing:</label>
+                <input class="search" type="search" name="q" id="bing">
+                <input class="btn" type="submit" value="Search">
+            </form>
+        </div>
+        <div class="formbox">
+            <form method="get" action="https://search.yahoo.com/search">
+                <label for="yahoo">Yahoo:</label>
+                <input class="search" type="search" name="q" id="yahoo">
+                <input class="btn" type="submit" value="Search">
+            </form>
+        </div>
+
+    </div>
+</body>
+
+</html>
